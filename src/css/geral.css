@@ -12,7 +12,7 @@ body {
 }
 
 .breadcrumb {
-	background: #666 !important;
+	background: #08c !important;
 	color:#fff !important;
 	padding:6px 0 0 0;
 }
@@ -30,7 +30,7 @@ body {
 }
 /* Estilos personalizados do site */
 .nav-ga {
-	background: #666;
+	background: #08c;
 	color: #fff;
 }
 
