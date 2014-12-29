@@ -6,9 +6,9 @@ $data = $_GET['data'];
 $resumo = $_GET['resumo'];
 
 //Inclui a página de cabeçalho
-include("header.inc.php");
+include("./src/inc/header.inc.php");
 //Inclui a página do menu lateral
-include("sidebar.inc.php");
+include("./src/inc/sidebar.inc.php");
 ?>
 <!-- CONTEÚDO SEMPRE DAQUI PRA BAIXO-->
 <div class="span9 conteudo">
@@ -98,5 +98,5 @@ include("sidebar.inc.php");
 </div>
 <?php
 //Inclui a página de rodapé
-include("footer.inc.php");
+include("./src/inc/footer.inc.php");
 ?>

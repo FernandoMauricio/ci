@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gerenciador Administrativo (GA)</title>
+    <title>Portal Senac - AM</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -28,7 +28,7 @@
         <div style="position:relative;float:left;width:2px;height:200px;background:#ccc;"></div>
 
         <div style="position:relative;float:left;margin-top:15px;margin-left:40px;">
-          <h4>Gerenciador<br />Administrativo (GA)</h4>
+          <h4>Portal Senac AM</h4>
           <form action="./index.php">
             Matrícula:<br />
             <input type="text"/><br />
@@ -39,7 +39,7 @@
         </div>
 
         <div style="border:1px #ccc solid;width:360px;padding:10px;background:#fff;position:relative;float:right;margin-top:30px;font-size:12px;">
-          *Para obter matrícula e senha de acesso, favor solicitar ao NTI (Núcleo de Tecnologia da Informação
+          *Para obter matrícula e senha de acesso, favor solicitar ao GIC (Gerência de Infórmática Corporativa)
         </div>
       </div>
 

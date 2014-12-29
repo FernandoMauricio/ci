@@ -2,16 +2,23 @@
 $config['titulo'] = "Criar Comunicação Interna";
 
 //Inclui a página de cabeçalho
-include("header.inc.php");
+include("./src/inc/header.inc.php");
 //Inclui a página do menu lateral
-include("sidebar.inc.php");
+include("./src/inc/sidebar.inc.php");
 ?>
 <!-- CONTEÚDO SEMPRE DAQUI PRA BAIXO-->
 <div class="span9 conteudo">
+
+	<ul class="nav nav-tabs nav-justified">
+      <li role="presentation" class="active"><a href="#">Comunicação Interna</a></li>
+      <li role="presentation"><a href="#">Visualizar CI</a></li>
+      <li role="presentation"><a href="#">Despachos Pendentes</a></li>
+    </ul>
+
 	<div class="page-header">
 		<h3>Criar Comunicação Interna</h3>
 	</div>
-	<div class="well-sm">
+	<div class="well">
 		<form>
 			<label>Unidade Administrativa de Destino:</label>
 			<select>
@@ -44,6 +51,7 @@ include("sidebar.inc.php");
 			<button class="btn" type="reset">Limpar</button>
 			<button class="btn btn-primary" type="button" onclick="javascript:alert('A CI foi criada com êxito!'); window.location = './src/img/comunicacao_interna_print.pdf'">Finalizar</button>
 		</form>
+
 	</div>
 </div>
 <!-- FIM DO CONTEÚDO -->
@@ -51,5 +59,5 @@ include("sidebar.inc.php");
 </div>
 <?php
 //Inclui a página de rodapé
-include("footer.inc.php");
+include("./src/inc/footer.inc.php");
 ?>
