@@ -7,7 +7,7 @@ include("./src/inc/header.inc.php");
 include("./src/inc/sidebar.inc.php");
 ?>
 <!-- CONTEÚDO SEMPRE DAQUI PRA BAIXO-->
-<div class="span9 conteudo">
+<div class="span8 conteudo">
 	<div class="page-header">
 		<h3>Lista de Comunicações Internas</h3>
 		<div class="input-append pull-right" style="margin-top:-46px;">
@@ -60,16 +60,25 @@ include("./src/inc/sidebar.inc.php");
 			</li>
 			<hr>
 		</ul>
-		<div class="pagination">
-			<ul>
-				<li class="disabled"><a href="#">Anterior</a></li>
-				<li class="active"><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">Próximo</a></li>
-			</ul>
-		</div>
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 	</div>
 </div>
 

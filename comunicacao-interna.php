@@ -7,49 +7,83 @@ include("./src/inc/header.inc.php");
 include("./src/inc/sidebar.inc.php");
 ?>
 <!-- CONTEÚDO SEMPRE DAQUI PRA BAIXO-->
-<div class="span9 conteudo">
+<div class="span8 conteudo">
 
 	<ul class="nav nav-tabs nav-justified">
       <li role="presentation" class="active"><a href="#">Comunicação Interna</a></li>
-      <li role="presentation"><a href="#">Visualizar CI</a></li>
-      <li role="presentation"><a href="#">Despachos Pendentes</a></li>
+      <li role="presentation"><a href="comunicacao-interna-visualizar.php?id=">Visualizar CI</a></li>
+      <li role="presentation"><a href="comunicacao-interna-despacho-pendente.php?id=">Despachos Pendentes</a></li>
     </ul>
 
 	<div class="page-header">
 		<h3>Criar Comunicação Interna</h3>
 	</div>
-	<div class="well">
-		<form>
-			<label>Unidade Administrativa de Destino:</label>
-			<select>
-				<option>Assessoria de Comunicação</option>
-				<option>Diretoria</option>
-				<option>Administrativo</option>
-			</select>
-			<br />
+			<label for="disabledTextInput">Código CI:</label><br /><br />
 			<label class="radio-inline">
-			  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+			  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Não Confidencial
 			</label>
 			<label class="radio-inline">
-			  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-			</label>
-			<br />
-			<label>Assunto:</label>
-			<input type="text" placeholder="Digite aqui o Assunto"/>
-			<br />
-			<label>Conteúdo:</label>
-			<textarea rows="8" class="input-xxlarge"></textarea>
-			<br />
-			<label>Status:</label>
+			  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Confidencial
+			</label><br /><br />
+
+			<label for="disabledTextInput">Enviar para:</label>
 			<select class="form-control">
-			  <option>Em Elaboração</option>
-			  <option>Para Autorização</option>
-			  <option>Em Circulação</option>
+			  <option>SEDE ADMINISTRATIVA - GIC</option>
+			  <option>SEDE ADMINISTRATIVA - DAD</option>
+			  <option>SEDE ADMINISTRATIVA - DPM</option>
+			  <option>SEDE ADMINISTRATIVA - GMT</option>
+			  <option>SEDE ADMINISTRATIVA - GMA</option>
+			  <option>SEDE ADMINISTRATIVA - GIC</option>
+			  <option>SEDE ADMINISTRATIVA - DAD</option>
+			  <option>SEDE ADMINISTRATIVA - DPM</option>
+			  <option>SEDE ADMINISTRATIVA - GMT</option>
+			  <option>SEDE ADMINISTRATIVA - GMA</option>
+			</select><br />
+			<label for="disabledTextInput">Cópia para:</label>
+			<select multiple class="form-control">
+			  <option>SEDE ADMINISTRATIVA - GIC</option>
+			  <option>SEDE ADMINISTRATIVA - DAD</option>
+			  <option>SEDE ADMINISTRATIVA - DPM</option>
+			  <option>SEDE ADMINISTRATIVA - GMT</option>
+			  <option>SEDE ADMINISTRATIVA - GMA</option>
+			  <option>SEDE ADMINISTRATIVA - GIC</option>
+			  <option>SEDE ADMINISTRATIVA - DAD</option>
+			  <option>SEDE ADMINISTRATIVA - DPM</option>
+			  <option>SEDE ADMINISTRATIVA - GMT</option>
+			  <option>SEDE ADMINISTRATIVA - GMA</option>
+			</select><br />
+
+			<form class="form-horizontal">
+			  <label for="disabledTextInput">Assunto:</label>
+			  <div class="form-group form-group-lg">
+			       <div class="col-sm-10">
+			      <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Assunto">
+			    </div>
+			  </div>
+			  <label for="disabledTextInput">Despacho:</label>
+			  <textarea class="form-control" rows="8" placeholder="Digite aqui seu despacho"></textarea><br />
+			</form>
+
+			  <div class="form-group">
+			    <label for="exampleInputFile">Anexar Arquivo:</label>
+			    <input type="file" id="exampleInputFile">
+			    <p class="help-block">Envie formatos RAR</p>
+			  </div>
+
+			<label for="disabledTextInput">Status:</label>
+			<select class="form-control">
+			  <option>Em elaboração</option>
+			  <option>Para aprovação</option>
+			  <option>Em cirulação</option>
+			  <option>Cancelado</option>
 			  <option>Encerrado</option>
 			</select>
 			<br /><br />
-			<button class="btn" type="reset">Limpar</button>
-			<button class="btn btn-primary" type="button" onclick="javascript:alert('A CI foi criada com êxito!'); window.location = './src/img/comunicacao_interna_print.pdf'">Finalizar</button>
+
+			<p>
+			  <button type="button" class="btn btn-default btn-lg">Limpar</button>
+			  <button type="button" class="btn btn-primary btn-lg">Criar Despacho</button>
+		    </p>
 		</form>
 
 	</div>
