@@ -1,0 +1,83 @@
+.cinza {
+	background: #ccc;
+}
+
+.altura {
+	height:200px;
+}
+/* Estilos sobrescritos */
+
+body {
+	font-family: "Verdana", Arial, sans-serif;
+}
+
+.breadcrumb {
+	background: #666 !important;
+	color:#fff !important;
+	padding:6px 0 0 0;
+}
+
+.breadcrumb>li {
+	display: inline-block;
+	text-shadow: none;
+}
+.breadcrumb>li a {
+	color: #fff;
+}
+
+.breadcrumb>.active {
+	color: #E6E6E6;
+}
+/* Estilos personalizados do site */
+.nav-ga {
+	background: #666;
+	color: #fff;
+}
+
+.bg_topo {
+	background: url(../img/bg_topo.jpg) no-repeat;
+}
+
+.nome_sistema_topo {
+	background: url(../img/texto_ga_topo.png) no-repeat;
+	width: 305px;
+	height: 60px;
+	position: relative;
+	float: left;
+	margin: 30px 0 0 160px;
+}
+
+.footer {
+	background:#ccc;
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	height:30px;
+	padding:5px;
+}
+
+.sidebar {
+	margin-top: 15%;
+}
+
+hr {
+	border: 1px #E6E6E6 solid;
+}
+
+.nav-tabs.nav-stacked > li:first-child > a {
+  -webkit-border-top-right-radius: 20px;
+          border-top-right-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+          border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-topleft: 20px;
+}
+
+.nav-tabs.nav-stacked > li:last-child > a {
+  -webkit-border-bottom-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+}
