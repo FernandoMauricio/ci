@@ -39,11 +39,11 @@
 	    	<div class="navbar-inner nav-ga" style="min-height:30px; height:30px;">
 	    		<div class="container">
 	    			<ul class="breadcrumb">
-						<li><a href="./">Página Inicial</a> </li>
+						<li><a href="./">Página Inicial</a></li>
 						<li class="active">
 							<?php
 							if($config['titulo'] != "Página Inicial"){
-								echo "<span class='divider'>/</span>";
+								echo "<span class='divider'></span>";
 								echo $config['titulo'];
 							}
 							?>

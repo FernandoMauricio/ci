@@ -10,7 +10,6 @@
 body {
 	font-family: "Verdana", Arial, sans-serif;
 }
-
 .breadcrumb {
 	background: #08c !important;
 	color:#fff !important;
@@ -36,6 +35,7 @@ body {
 
 .bg_topo {
 	background: url(../img/bg_topo.jpg) no-repeat;
+	padding-top: 12px;
 }
 
 .nome_sistema_topo {
@@ -44,7 +44,7 @@ body {
 	height: 60px;
 	position: relative;
 	float: left;
-	margin: 30px 0 0 160px;
+	margin: 30px 0 25px 160px;
 }
 
 .footer {
@@ -58,6 +58,7 @@ body {
 
 .sidebar {
 	margin-top: 5%;
+	
 }
 
 hr {
@@ -82,6 +83,11 @@ hr {
   -moz-border-radius-bottomleft: 20px;
 }
 
+.col-lg-5{
 
+	float: right;
+}
+
+.
 
 

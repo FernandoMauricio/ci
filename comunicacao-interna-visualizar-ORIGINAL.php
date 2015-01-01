@@ -15,15 +15,13 @@ include("./src/inc/sidebar.inc.php");
       <li role="presentation"><a href="comunicacao-interna-despacho-pendente.php?id=">Despachos Pendentes</a></li>
     </ul>
 
-<br>
+	<div class="page-header">
+		<h3>Visualizar Comunicação Interna</h3>
+	</div>
 
-<div class="panel panel-warning">
-  <div class="panel-heading">
-    <h3 class="panel-title">Visualizar Comunicação Interna</h3>
-  </div>
-  <div class="panel-body">
 
-    <table width="100%" border="1" cellspacing="0" bordercolor="#000000">
+
+<table width="100%" border="1" cellspacing="0" bordercolor="#000000">
   <tr> 
     <td width="16%" rowspan="2" valign="middle"> <div align="center"><img src="./src/img/logo_pequena.jpg" width="100" height="65"></div></td>
     <td width="54%" height="37" valign="middle">
@@ -40,7 +38,7 @@ include("./src/inc/sidebar.inc.php");
 <br>
 <table width="100%" border="1" cellspacing="0" bordercolor="#666666">
   <tr valign="middle"> 
-    <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">DATA</font></strong></td>
+    <td width:"16%"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">DATA</font></strong></td>
     <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">DE</font></strong></td>
     <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">PARA</font></strong></td>
     <td><div align="center"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">DESPACHOS</font></strong></div>
@@ -95,8 +93,6 @@ As férias do colaborador serão em MARÇO/2015 (30 dias de férias). Poderíamo
     <td colspan="4"><hr align="left" width="45%"></td>
   </tr>
 </table>
-
-
 
 
 

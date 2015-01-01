@@ -15,9 +15,13 @@ include("./src/inc/sidebar.inc.php");
       <li role="presentation"><a href="comunicacao-interna-despacho-pendente.php?id=">Despachos Pendentes</a></li>
     </ul>
 
-	<div class="page-header">
-		<h3>Criar Comunicação Interna</h3>
-	</div>
+<br>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Criar Comunicação Interna</h3>
+  </div>
+    <div class="panel-body">
 			<label for="disabledTextInput">Código CI:</label><br /><br />
 			<label class="radio-inline">
 			  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Não Confidencial
@@ -82,12 +86,33 @@ include("./src/inc/sidebar.inc.php");
 
 			<p>
 			  <button type="button" class="btn btn-default btn-lg">Limpar</button>
-			  <button type="button" class="btn btn-primary btn-lg">Criar Despacho</button>
+			  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#confirmation">Enviar</button>
+			  
 		    </p>
 		</form>
 
 	</div>
 </div>
+
+
+<!-- Modal de confirmação de criação de CI -->
+<div class="modal fade" id="confirmation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sucesso!</h4>
+      </div>
+      <div class="modal-body">
+        Comunicação Interna Código 5000 criada! Acompanhe o processo aqui. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- FIM DO CONTEÚDO -->
 </div>
 </div>
