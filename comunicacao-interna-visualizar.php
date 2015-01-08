@@ -17,7 +17,7 @@ include("./src/inc/sidebar.inc.php");
 
 <br>
 
-<div class="panel panel-warning">
+<div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Visualizar Comunicação Interna</h3>
   </div>

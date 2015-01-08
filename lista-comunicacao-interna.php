@@ -10,8 +10,10 @@ include("./src/inc/sidebar.inc.php");
 <div class="span8 conteudo">
 
 	<ul class="nav nav-tabs nav-justified">
-      <li role="presentation" class="active"><a href="#">Em Circulação</a></li>
-      <li role="presentation"><a href="lista-comunicacao-interna-pendente.php?id=">Pendentes</a></li>
+      <li role="presentation" class="active"><a href="lista-comunicacao-interna.php?id=">Em Circulação</a></li>
+      <li role="presentation"><a href="lista-comunicacao-interna-elaboracao.php?id=">Em Elaboração</a></li>
+      <li role="presentation"><a href="lista-comunicacao-interna-autorizacao.php?id=">P/ Autorização</a></li>
+      <li role="presentation"><a href="lista-comunicacao-interna-cancelada.php?id=">Canceladas</a></li>
       <li role="presentation"><a href="lista-comunicacao-interna-encerrada.php?id=">Encerradas</a></li>
     </ul>
 
@@ -37,7 +39,7 @@ include("./src/inc/sidebar.inc.php");
 						Ano: 2015<br />
 						Destinatário: DAD<br />
 						Data e hora de emissão: 11/02/13 às 14:45<br />
-						Situação: <span class="label label-warning">Em Circulação</span>
+						Situação: <span class="label label-primary">Em Circulação</span>
 				</div><br /><br /><br />
 				<div class="btn-group pull-right" style="margin-top:-34px;">
 					<a class="btn btn-default" href="#" role="button"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
@@ -52,7 +54,7 @@ include("./src/inc/sidebar.inc.php");
 						Ano: 2015<br />
 						Destinatário: DAD<br />
 						Data e hora de emissão: 11/02/13 às 14:45<br />
-						Situação: <span class="label label-warning">Em Circulação</span>
+						Situação: <span class="label label-primary">Em Circulação</span>
 				</div><br /><br /><br />
 				<div class="btn-group pull-right" style="margin-top:-34px;">
 					<a class="btn btn-default" href="#" role="button"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
@@ -67,7 +69,7 @@ include("./src/inc/sidebar.inc.php");
 						Ano: 2015<br />
 						Destinatário: DAD<br />
 						Data e hora de emissão: 11/02/13 às 14:45<br />
-						Situação: <span class="label label-warning">Em Circulação</span>
+						Situação: <span class="label label-primary">Em Circulação</span>
 				</div><br /><br /><br />
 				<div class="btn-group pull-right" style="margin-top:-34px;">
 					<a class="btn btn-default" href="#" role="button"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
