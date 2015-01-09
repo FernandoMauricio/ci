@@ -26,7 +26,7 @@ include("./src/inc/sidebar.inc.php");
 				<option>Supervisor</option>
 			</select><br />
 
-			<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-nivel-funcional"><i class="glyphicon glyphicon-plus"></i> Nível Funcional</a><br /><br />
+			<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-nivel-funcional"><i class="glyphicon glyphicon-plus"></i> Cargo</a><br /><br />
 
 			<label for="disabledTextInput">Unidade Administrativa:</label><br />
 			<select class="form-control">
@@ -68,12 +68,12 @@ include("./src/inc/sidebar.inc.php");
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Adicionar Níveis Funcionais</h4>
+        <h4 class="modal-title" id="myModalLabel">Adicionar Cargo</h4>
       </div>
       <div class="modal-body">
   	<form>
-		<label for="recipient-name" class="control-label">Novo Nível Funcional</label><br />
-		<input type="text" class="form-control" id="recipient-name" placeholder="Digite aqui o novo nível funcional"/><br />
+		<label for="recipient-name" class="control-label">Novo Cargo</label><br />
+		<input type="text" class="form-control" id="recipient-name" placeholder="Digite aqui o novo cargo"/><br />
 		<a class="btn btn-success" href="javascript:void(0);">Adicionar</a><br /><br />
 	</form>
     <table class="table table-hover">
@@ -104,6 +104,22 @@ include("./src/inc/sidebar.inc.php");
 			<tr>
 				<td>3</td>
 				<td>Supervisor</td>
+				<td>
+					<a class="btn btn-small btn-primary" role="button"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+					<a class="btn btn-small btn-danger" role="button"><i class="glyphicon glyphicon-remove"></i> Excluir</a>
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Programador</td>
+				<td>
+					<a class="btn btn-small btn-primary" role="button"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+					<a class="btn btn-small btn-danger" role="button"><i class="glyphicon glyphicon-remove"></i> Excluir</a>
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Docente</td>
 				<td>
 					<a class="btn btn-small btn-primary" role="button"><i class="glyphicon glyphicon-edit"></i> Editar</a>
 					<a class="btn btn-small btn-danger" role="button"><i class="glyphicon glyphicon-remove"></i> Excluir</a>

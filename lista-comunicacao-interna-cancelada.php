@@ -13,7 +13,7 @@ include("./src/inc/sidebar.inc.php");
       <li role="presentation"><a href="lista-comunicacao-interna.php?id=">Em Circulação</a></li>
       <li role="presentation"><a href="lista-comunicacao-interna-elaboracao.php?id=">Em Elaboração</a></li>
       <li role="presentation"><a href="lista-comunicacao-interna-autorizacao.php?id=">P/ Autorização</a></li>
-      <li role="presentation" class="active"><a href="lista-comunicacaointerna-cancelada.php?id=">Canceladas</a></li>
+      <li role="presentation" class="active"><a href="lista-comunicacao-interna-cancelada.php?id=">Canceladas</a></li>
       <li role="presentation"><a href="lista-comunicacao-interna-encerrada.php?id=">Encerradas</a></li>
     </ul>
 
