@@ -14,7 +14,7 @@ include("./src/inc/sidebar.inc.php");
 
 
 <div class="jumbotron">
-  <h3>Boa tarde, Fernando Maurício!</h3><br />
+  <h3>Bom dia, Fernando Maurício!</h3><br />
 
 	<h4>CI - Comunicação Interna</h4>
 		<h5>Formalização de solicitações internas da empresa através de comunicações internas.</h5><br />
