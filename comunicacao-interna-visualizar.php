@@ -33,7 +33,7 @@ include("./src/inc/sidebar.inc.php");
   </tr>
   <tr> 
     <td colspan="2"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em>[ASSUNTO]</em> 
-      Compensação de horas para o curso de DESENVOLVIMENTO JAVA</font></td>
+      Seja Bem Vindo ao Gerenciador de Documentacao Eletronica</font></td>
   </tr>
 </table>
   
@@ -47,33 +47,21 @@ include("./src/inc/sidebar.inc.php");
       <div align="center"><strong></strong></div></td>
   </tr>
   <tr valign="middle"> 
-    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">05/01/2015</font></td>
-    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">GIC</font></td>
-    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">DAD</font> <br> <br> 
+    <td valign="top"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">05/01/15</font></td>
+    <td valign="top"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">GIC</font></td>
+    <td valign="top"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">DAD</font> <br> <br> 
       <font size="1" face="Verdana, Arial, Helvetica, sans-serif"><em>Cópia Para:<br>
       GRH</em> 
       </font></td>
     <td width="51%">
 
 
-Prezado Gerente da DAD, Senhor Neilon Márcio.
-
-Considerando a participação do nosso colaborador Fernando Maurício, programador, em um dos programas (JOVENS TALENTOS) oferecidos pela FUCAPI para selecionar jovens com conhecimentos específicos em programação para participar do curso de JAVA, totalmente gratuito, cuja seleção ocorreu em 2(duas) etapas, sendo elas: Análise de currículo e prova com conhecimentos específicos. E conforme reportagem abaixo da aprovação dos selecionados nessas duas fases contando com a inclusão do nosso colaborador:
-
-http://www.fucapi.br/educacao/2014/12/fucapi-divulga-lista-de-aprovados-do-programa-jovens-talentos-2015/
-
-Venho por meio deste, solicitar à aprovação desta gerência a liberação de meio período do colaborador no período do curso que acontecerá conforme detalhamento abaixo:
-
-Período das Aulas: 05 de Janeiro a 27 de Fevereiro de 2015.
-Horário: 14h às 18h.
-Local: FUCAPI, Bloco E, Laboratório E4.
-C.H TOTAL DO CURSO: 160 horas
-A sugestão desta gerência seria do colaborador compensar essas horas conforme detalhamento abaixo.
-C.H TOTAL PARA COMPENSAR: 180 horas
-DIAS PARA COMPENSAR: 40
-HORAS POR DIA PARA COMPENSAR: 4:30hrs (13:00 às 17:30)
-As férias do colaborador serão em MARÇO/2015 (30 dias de férias). Poderíamos considerar a compensação de 10 dias nessas férias totalizando carga horária compensada = 80 horas e para o restante da compensação, o colaborador poderá entrar 1 hora antes.
-
+Prezados Gerentes
+É com prazer que informamos o mais novo Portal de Documentação do Senac-Am que tem como objetivo oferecer novos recursos para envio e recebimento de documentos internos do nosso DR, além de atualizar as funcionalidades existentes.
+Inicialmente foi disponibilizado apenas o módulo de Documentação Eletrônica (antiga Comunicação Interna do Gênesis), com proposta de tornar os despachos de documentos ainda mais eletrônicos.
+Para 2011 pretendemos disponibilizar os demais recursos que ora estão em desenvolvimento como: Requisição de Viagem, Prestação de Contas de Viagem e Fundo Rotativo, Requisição de Reprografia integrado ao Star-Team, além de migrar as funcionalidades que hoje praticamos no Gênesis.
+O objetivo deste guia é orientar quanto ao uso do Modulo de Documentação Eletrônica nesta nova versão e que sirva de auxilio para qualquer ação dentro da aplicação.
+Bom trabalho a todos e bom uso.
 
 
     </p> <table width="100%" border="0">

@@ -13,7 +13,7 @@ include("./src/inc/sidebar.inc.php");
 <!-- CONTEÚDO SEMPRE DAQUI PRA BAIXO-->
 <div class="span8 conteudo">
 	<div class="page-header">
-		<h3>Editar Portaria</h3>
+		<h1>Editar Portaria</h1>
 	</div>
 	<div class="well">
 		<form>

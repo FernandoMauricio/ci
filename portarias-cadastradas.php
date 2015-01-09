@@ -9,12 +9,18 @@ include("./src/inc/sidebar.inc.php");
 <!-- CONTEÚDO SEMPRE DAQUI PRA BAIXO-->
 <div class="span8 conteudo">
 	<div class="page-header">
-		<h3>Portarias Cadastradas</h3>
-		<div class="input-append pull-right" style="margin-top:-46px;">
-			<input class="span2" id="appendedInputButton" type="text">
-			<button class="btn" type="button"><i class="icon-search"></i></button>
-		</div>
+		<h1>Portarias Cadastradas</h1>
+
+			 <div class="col-lg-5">
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="Localizar CI...">
+			      <span class="input-group-btn">
+			        <button class="btn btn-primary" type="button">Go!</button>
+			      </span>
+			    </div>
+			  </div><br /><br />
 	</div>
+
 	<div class="well">
 		<ul class="media-list">
 			<li class="media">
@@ -26,8 +32,8 @@ include("./src/inc/sidebar.inc.php");
 						<a href="javascript:void(0);" data-toggle="collapse" data-target="#resumo1">leia mais</a>
 						<div id="resumo1" class="collapse">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dolore, iste illum iure ex laborum ipsam et molestias corporis sit natus nisi iusto quis itaque cupiditate fuga laudantium animi eum accusantium beatae suscipit autem maiores at nihil voluptatem sunt perspiciatis hic quaerat id dicta vitae quisquam reiciendis eius. Aliquam, culpa!
-						</div><br />
-						<a class="btn" href="./src/img/comunicacao_interna_print.pdf" target="_blank"><i class="icon-download-alt icon-inverse"></i> Download da portaria digitalizada</a>
+						</div><br /><br />
+						<a class="btn btn-primary" href="./src/img/comunicacao_interna_print.pdf" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Download da portaria digitalizada</a>
 				</div>
 			</li>
 			<hr>
@@ -40,8 +46,8 @@ include("./src/inc/sidebar.inc.php");
 						<a href="javascript:void(0);" data-toggle="collapse" data-target="#resumo2">leia mais</a>
 						<div id="resumo2" class="collapse">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dolore, iste illum iure ex laborum ipsam et molestias corporis sit natus nisi iusto quis itaque cupiditate fuga laudantium animi eum accusantium beatae suscipit autem maiores at nihil voluptatem sunt perspiciatis hic quaerat id dicta vitae quisquam reiciendis eius. Aliquam, culpa!
-						</div><br />
-						<a class="btn" href="./src/img/comunicacao_interna_print.pdf" target="_blank"><i class="icon-download-alt icon-inverse"></i> Download da portaria digitalizada</a>
+						</div><br /><br />
+						<a class="btn btn-primary" href="./src/img/comunicacao_interna_print.pdf" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Download da portaria digitalizada</a>
 				</div>
 			</li>
 			<hr>
@@ -54,51 +60,34 @@ include("./src/inc/sidebar.inc.php");
 						<a href="javascript:void(0);" data-toggle="collapse" data-target="#resumo3">leia mais</a>
 						<div id="resumo3" class="collapse">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dolore, iste illum iure ex laborum ipsam et molestias corporis sit natus nisi iusto quis itaque cupiditate fuga laudantium animi eum accusantium beatae suscipit autem maiores at nihil voluptatem sunt perspiciatis hic quaerat id dicta vitae quisquam reiciendis eius. Aliquam, culpa!
-						</div><br />
-						<a class="btn" href="./src/img/comunicacao_interna_print.pdf" target="_blank"><i class="icon-download-alt icon-inverse"></i> Download da portaria digitalizada</a>
+						</div><br /><br />
+						<a class="btn btn-primary" href="./src/img/comunicacao_interna_print.pdf" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Download da portaria digitalizada</a>
 				</div>
 			</li>
 			<hr>
 		</ul>
-		<div class="pagination">
-			<ul>
-				<li class="disabled"><a href="#">Anterior</a></li>
-				<li class="active"><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">Próximo</a></li>
-			</ul>
-		</div>
+
+
+						<nav>
+						  <ul class="pagination">
+						    <li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true">Anterior</span>
+						      </a>
+						    </li>
+						    <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true">Próximo</span>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>
 	</div>
-</div>
-
-<!-- Modal de mensagem de confirmação de exclusão -->
-<div id="excluir-ci" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Excluir Comunicação Interna</h3>
-  </div>
-  <div class="modal-body">
-    <p>Deseja realmente excluir a Comunicação Interna Nº 740?</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Cancelar</a>
-    <a data-dismiss="modal" href="#excluido" class="btn btn-primary" role="button" data-toggle="modal"> Excluir</a>
-  </div>
-</div>
-
-<!-- Modal de mensagem de exclusão -->
-<div id="excluido" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Comunicação Interna Excluída</h3>
-  </div>
-  <div class="modal-body">
-    <p>A Comunicação Interna de Nº 740 foi excluída com êxito!</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn btn-primary" data-dismiss="modal"> Fechar</a>
-  </div>
 </div>
 
 <!-- FIM DO CONTEÚDO -->

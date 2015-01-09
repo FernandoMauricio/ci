@@ -9,60 +9,67 @@ include("./src/inc/sidebar.inc.php");
 <!-- CONTEÚDO SEMPRE DAQUI PRA BAIXO-->
 <div class="span8 conteudo">
 	<div class="page-header">
-		<h3>Cadastrar Portaria</h3>
+		<h1>Cadastrar Portaria</h1>
 	</div>
 	<div class="well">
 		<form>
-			Número da Portaria<br />
-			<input type="text" placeholder="Digite aqui o número da portaria"/><br /><br />
+			<label for="disabledTextInput">Número da Portaria:</label><br / >
+			<input type="text" class="form-control" placeholder="Digite aqui o número da portaria"/><br />
 
-			Ano da Portaria:<br />
-			<select>
-				<option>2013</option>
-				<option>2012</option>
-				<option>2011</option>
-				<option>2010</option>
-				<option>2009</option>
-				<option>2008</option>
-			</select><br /><br />
+				<label for="disabledTextInput">Ano da Portaria:</label><br / >
+					<select class="form-control">
+						<option>2015</option>
+						<option>2014</option>
+						<option>2013</option>
+						<option>2012</option>
+						<option>2011</option>
+						<option>2010</option>
+						<option>2009</option>
+						<option>2008</option>
+					</select><br />
 
-			Tipo da Portaria:<br />
-			<select>
-				<option>Revogação</option>
-				<option>Não lembro</option>
-				<option>Depois eu coloco</option>
-			</select> <a data-toggle="modal" href="#add-novo" class="btn btn-small" style="margin:0 0 10px 0;"><i class="icon-edit"></i> Add Novo</a><br /><br />
+				<label for="disabledTextInput">Tipo da Portaria:</label>
+				<a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-portaria"><i class="glyphicon glyphicon-plus"></i> Novo</a><br /><br />
 
-			Data de Publicação da Portaria<br />
-			<input type="text" placeholder="Digite aqui a data de publicação da portaria"/><br /><br />
-
-			Arquivo da Portaria Digitalizado:<br />
+					<select class="form-control">
+						<option>Revogação</option>
+						<option>Contratação</option>
+						<option>Outro</option>
+					</select> <br />
+			
+			<label for="disabledTextInput">Data de Publicação da Portaria: </label><br />
+			<input type="date" class="form-control"><br /><br />
+		
+			<label for="disabledTextInput">Arquivo da Portaria Digitalizado:</label><br />
 			<input type="file" /><br /><br />
 
-			Resumo da Portaria:<br />
-			<textarea rows="8" class="input-xxlarge"></textarea>
+			<label for="disabledTextInput">Resumo da Portaria:</label><br />
+			<textarea class="form-control" rows="8" placeholder="Digite aqui um resumo da Portaria"></textarea><br />
 			
 			<br /><br />
 			<button class="btn" type="reset">Limpar</button>
 			<button class="btn btn-primary" type="button" onclick="javascript:alert('A Portaria foi cadastrada com êxito!')">Cadastrar</button>
 		</form>
+		
 	</div>
 </div>
 <!-- FIM DO CONTEÚDO -->
 
 <!-- Modal de inclusão de novo Tipo de Portaria -->
-<div id="add-novo" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Lista de Tipos de Portaria</h3>
-  </div>
-  <div class="modal-body">
+<div class="modal fade" id="add-portaria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Lista de Tipos de Portaria</h4>
+      </div>
+      <div class="modal-body">
   	<form>
-		Nome do tipo de portaria<br />
-		<input type="text" placeholder="Digite aqui o tipo de portaria"/><br />
-		<a class="btn" href="javascript:void(0);">Adicionar</a><br /><br />
+		<label for="recipient-name" class="control-label">Nome do tipo de portaria:</label><br />
+		<input type="text" class="form-control" id="recipient-name" placeholder="Digite aqui o tipo de portaria"/><br />
+		<a class="btn btn-success" href="javascript:void(0);">Adicionar</a><br /><br />
 	</form>
-    <table class="table table-condensed">
+    <table class="table table-hover">
     	<thead>
 			<tr>
 				<th>Nome</th>
@@ -84,11 +91,15 @@ include("./src/inc/sidebar.inc.php");
 			</tr>
 		</tbody>
 	</table>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Fechar</a>
+			  <div class="modal-footer">
+			    <a href="#" class="btn btn-small btn-default" data-dismiss="modal">Fechar</a>
+			  </div>
+    </div>
   </div>
 </div>
+
+
+
 
 </div>
 </div>

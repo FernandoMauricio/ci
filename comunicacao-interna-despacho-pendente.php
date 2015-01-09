@@ -21,7 +21,7 @@ include("./src/inc/sidebar.inc.php");
     <h4 class="panel-title">Despachos Pentendes</h4>
   </div>
   <div class="panel-body">
-    <table class="table table-striped">
+    <table class="table table-hover">
                     <thead>
                       <tr>
                         <th>Código CI</th>

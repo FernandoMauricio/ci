@@ -10,10 +10,15 @@ include("./src/inc/sidebar.inc.php");
 <div class="span8 conteudo">
 	<div class="page-header">
 		<h3>Usuários Cadastrados</h3>
-		<div class="input-append pull-right" style="margin-top:-46px;">
-			<input class="span2" id="appendedInputButton" type="text">
-			<button class="btn" type="button"><i class="icon-search"></i></button>
-		</div>
+
+			 <div class="col-lg-5">
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="Localizar usuário...">
+			      <span class="input-group-btn">
+			        <button class="btn btn-primary" type="button">Go!</button>
+			      </span>
+			    </div>
+			  </div><br /><br />
 	</div>
 	<div class="well">
 		<ul class="media-list">
@@ -22,14 +27,14 @@ include("./src/inc/sidebar.inc.php");
 					<img class="media-object" src="./src/img/foto_vazio.png">
 				</a>
 				<div class="media-body">
-					<h4 class="media-heading">Pedro Fonseca</h4>
-						Matrícula: G00052<br />
-						Núcleo de Tecnologia da Informação<br />
-						Administrador do Sistema<br />
+					<h4 class="media-heading">Fernando Mauricio</h4>
+						Matrícula: 2000<br />
+						Gerência de Informática Corporativa<br />
+						Programador<br />
 				</div>
 				<div class="btn-group pull-right" style="margin-top:-34px;">
-					<a class="btn" href="./cadastrar-usuario.php"><i class="icon-edit"></i> Editar</a>
-					<a class="btn btn-danger" href="#excluir" role="button" data-toggle="modal"><i class="icon-remove icon-white"></i> Excluir</a>
+					<a class="btn btn-primary" href="./cadastrar-usuario.php"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+					<a type="button" class="btn btn-danger" data-toggle="modal" data-target="#inativar"><i class="glyphicon glyphicon-remove"></i> Inativar</a>
 				</div>
 			</li>
 			<hr>
@@ -38,14 +43,14 @@ include("./src/inc/sidebar.inc.php");
 					<img class="media-object" src="./src/img/foto_vazio.png">
 				</a>
 				<div class="media-body">
-					<h4 class="media-heading">Pedro Fonseca</h4>
-						Matrícula: G00052<br />
-						Núcleo de Tecnologia da Informação<br />
-						Administrador do Sistema<br />
+					<h4 class="media-heading">Laércio Varela</h4>
+						Matrícula: 25000<br />
+						Gerência de Informática Corporativa<br />
+						Analista de Suporte<br />
 				</div>
 				<div class="btn-group pull-right" style="margin-top:-34px;">
-					<a class="btn" href="./cadastrar-usuario.php"><i class="icon-edit"></i> Editar</a>
-					<a class="btn btn-danger" href="#excluir" role="button" data-toggle="modal"><i class="icon-remove icon-white"></i> Excluir</a>
+					<a class="btn btn-primary" href="./cadastrar-usuario.php"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+					<a type="button" class="btn btn-danger" data-toggle="modal" data-target="#inativar"><i class="glyphicon glyphicon-remove"></i> Inativar</a>
 				</div>
 			</li>
 			<hr>
@@ -54,59 +59,84 @@ include("./src/inc/sidebar.inc.php");
 					<img class="media-object" src="./src/img/foto_vazio.png">
 				</a>
 				<div class="media-body">
-					<h4 class="media-heading">Pedro Fonseca</h4>
-						Matrícula: G00052<br />
-						Núcleo de Tecnologia da Informação<br />
-						Administrador do Sistema<br />
+					<h4 class="media-heading">Endrio Medeiros</h4>
+						Matrícula: 3500<br />
+						Gerência de Informática Corporativa<br />
+						Técnico de Informática<br />
 				</div>
 				<div class="btn-group pull-right" style="margin-top:-34px;">
-					<a class="btn" href="./cadastrar-usuario.php"><i class="icon-edit"></i> Editar</a>
-					<a class="btn btn-danger" href="#excluir" role="button" data-toggle="modal"><i class="icon-remove icon-white"></i> Excluir</a>
+
+					<a class="btn btn-primary" href="./cadastrar-usuario.php"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+					<a type="button" class="btn btn-danger" data-toggle="modal" data-target="#inativar"><i class="glyphicon glyphicon-remove"></i> Inativar</a>
+
 				</div>
 			</li>
 			<hr>
 		</ul>
-		<div class="pagination">
-			<ul>
-				<li class="disabled"><a href="#">Anterior</a></li>
-				<li class="active"><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">Próximo</a></li>
-			</ul>
-		</div>
+					<nav>
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">Anterior</span>
+					      </a>
+					    </li>
+					    <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">Próximo</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
 	</div>
 </div>
 
-<!-- Modal de mensagem de confirmação de exclusão -->
-<div id="excluir" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Excluir Usuário</h3>
-  </div>
-  <div class="modal-body">
-    <p>Deseja realmente excluir o usuário Pedro Fonseca?</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Cancelar</a>
-    <a data-dismiss="modal" href="#excluido" class="btn btn-primary" role="button" data-toggle="modal"> Excluir</a>
+<!-- Modal de inativação de usuário -->
+<div class="modal fade" id="inativar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Usuário Inativado</h4>
+      </div>
+      <div class="modal-body">
+        <p>Deseja realmente excluir o usuário Fernando Mauricio?</p> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <a data-dismiss="modal" class="btn btn-danger" href="#inativado" role="button" data-toggle="modal">Confirmar</a>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Modal de mensagem de exclusão -->
-<div id="excluido" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Usuário Excluído</h3>
-  </div>
-  <div class="modal-body">
-    <p>O usuário Pedro FOnseca foi excluída com êxito!</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn btn-primary" data-dismiss="modal"> Fechar</a>
+<!-- Modal de mensagem de confirmação inativação usuário -->
+<div class="modal fade" id="inativado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Usuário Inativado</h4>
+      </div>
+      <div class="modal-body">
+        <p>O usuário Fernando Mauricio foi inativado com êxito!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
   </div>
 </div>
+
+
+
+
+
+
 
 <!-- FIM DO CONTEÚDO -->
 </div>
